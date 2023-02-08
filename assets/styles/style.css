@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: url("../images/bg-intro-desktop.png") hsl(0, 100%, 74%) no-repeat
+		center center fixed;
+	background-size: cover;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #fff;
+	margin: 0 auto;
+	width: 90%;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+.left_section {
+	padding: 30px 50px;
+	flex-basis: 45%;
+}
+
+.left_section h1 {
+	font-size: 3rem;
+	line-height: 3.2rem;
+	margin-bottom: 25px;
+}
+
+.left_section p {
+	font-size: 1rem;
+	line-height: 22px;
+}
+
+.right_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 45%;
+	padding: 30px;
+	margin-right: 60px;
+	height: auto;
+}
+
+.freeTrial_button button {
+	width: 100%;
+	padding: 20px 10px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px 0px #4b495a;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 600;
+	background-color: #6055a5;
+}
+
+span {
+	font-weight: 400;
+}
+
+.form_wrapper {
+	padding: 25px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 3px 3px 0px #4b495a;
+}
+
+form {
+	flex-basis: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 0.5px solid hsl(246, 25%, 77%);
+	border-radius: 10px;
+	outline: none;
+	font-weight: 600;
+}
+
+input:focus {
+	border-color: hsl(248, 32%, 49%);
+}
+
+input::placeholder {
+	color: hsl(246, 25%, 77%);
+}
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+form button {
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 20px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	background-color: hsl(154, 59%, 51%);
+}
+
+form p {
+	color: hsl(246, 25%, 77%);
+	font-size: 0.7rem;
+	text-align: center;
+	padding: 10px;
+}
+
+form span {
+	color: hsl(0, 100%, 74%);
+}
+
+.error_msgFirstName,
+.error_msgLastName,
+.error_msgEmail,
+.error_msgPassword {
+	height: 10px;
+	font-style: italic;
+	color: hsl(0, 100%, 74%);
+	text-align: right;
+	font-weight: 500;
+	font-size: 11px;
+	position: relative;
+	bottom: 10px;
+}
+
+.form_wrapper button:hover {
+	background-color: hsl(155, 96%, 35%);
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+	body {
+		background: url("../images/bg-intro-mobile.png") hsl(0, 100%, 74%) no-repeat
+			center center fixed;
+		height: auto;
+	}
+
+	main {
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.left_section {
+		padding: 70px 10px;
+		text-align: center;
+		height: auto;
+	}
+
+	.left_section h1 {
+		font-size: 1.5rem;
+		line-height: normal;
+		margin: 0;
+		padding: 5px 20px;
+	}
+
+	.left_section p {
+		font-size: 1rem;
+	}
+
+	.right_section {
+		padding: 0 10px;
+		margin: 0;
+		height: auto;
+		align-items: center;
+	}
+
+	.form_wrapper {
+		width: 90%;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+}
